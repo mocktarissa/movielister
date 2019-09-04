@@ -21,14 +21,15 @@ class App extends Component{
     }.bind(this))
   }
   render (){
+
   
   return(
   <div> 
     
     <SearchBar></SearchBar>
-   
+   <li>{this.state.movies.title}</li>
     <VideoDetail title={this.state.currentMovie.title} description={this.state.currentMovie.overview}/>
-    <VideoListItem movies={this.state.movies[0]}/>
+    <VideoList movies={this.state.movies}/>
   </div>
   );  
     }

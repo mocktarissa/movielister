@@ -1,8 +1,7 @@
 import React from 'react'
 
-const VideoListitem=({movies})=>{
-    console.log('This is ',movies);
-        return <p>title={movies.toString()}</p> 
+const VideoListitem=({titles})=>{
+    return (<li> A movie recommended: {titles.toString()}</li>);
 }
 
 export default VideoListitem;
