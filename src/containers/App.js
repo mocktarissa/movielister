@@ -49,6 +49,7 @@ class App extends Component {
                  this.setState({currentMovie:currentMovieWithVideo});
             }
         }.bind(this));
+        console.log(request);
     }
 
 callBackMovieClick(movie){
