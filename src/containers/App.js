@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import _ from 'lodash'
+
 import SearchBar from '../components/search-bar'
 import MovieDetail from '../components/movie-detail'
 import MovieVideo from '../components/movie-video'
@@ -63,7 +63,7 @@ callBackMovieClick(movie){
            //si on trouve des data
             if(response.data && response.data.results[0]){
                 //si le film trouvé est different de l actuel
-                if(response.data.results[0].id!=this.state.currentMovie.id){
+                if(response.data.results[0].id!==this.state.currentMovie.id){
                     this.updateAfterSearch(response);
                 }
             }
