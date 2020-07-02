@@ -69,8 +69,9 @@ callBackMovieClick(movie){
                 }
             }
         }.bind(this));
+        console.log(request);
     }
-    console.log(request);
+
   }
 
 updateAfterSearch(response){
