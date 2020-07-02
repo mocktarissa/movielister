@@ -70,7 +70,7 @@ callBackMovieClick(movie){
             }
         }.bind(this));
     }
-    console.log(Request);
+    console.log(request);
   }
 
 updateAfterSearch(response){
