@@ -36,6 +36,7 @@ class App extends Component {
         });
       
         }.bind(this));
+        console.log(request);
     }
    
 
@@ -69,6 +70,7 @@ callBackMovieClick(movie){
             }
         }.bind(this));
     }
+    console.log(Request);
   }
 
 updateAfterSearch(response){
