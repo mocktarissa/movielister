@@ -87,6 +87,7 @@ setRecommendation(){
             this.setState({movies:response.data.results.slice(1,6)});
        }
      }.bind(this)); 
+     console.log(request);
 }
 shouldComponentUpdate (nextProps, nextState) {
     if(!nextState.currentMovie.videoId){
